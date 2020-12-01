@@ -9,17 +9,19 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
 </head>
 
 <body>
 
     <!-- connects to the server and displays results -->
-    <h1 class="title">Videochat SAD!</h1>
+    
     <div class="container" id="chat">
+        <h1 class="title">Videochat SAD!</h1>
         <div id="chat-window">
             <div id="output"></div>
+            <div id="typing"></div>
         </div>
         
         <input id="handle" type="text" placeholder="name" />

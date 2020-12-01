@@ -21,4 +21,8 @@ io.on('connection', (socket) => {
         io.sockets.emit('chat', data)
     });
 
+    socket.on('userTyping', (data) => {
+        socket.broadcast.emit('userTyping', data) //No senvia el missatge de user is typing...
+    })
+
 })
